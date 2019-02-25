@@ -15,9 +15,9 @@ do
   read userAnswer
   if $(isNumber $userAnswer) ; then
     if [[ $userAnswer -gt $correctAnswer ]] ; then
-      echo "Try lower!"
+      echo "Too high. Try again!"
     elif [[ $userAnswer -lt $correctAnswer ]] ; then
-      echo "Try higher!"
+      echo "Too low. Try again!"
     else
       echo "Congratulations! The correct answer is $correctAnswer."
     fi
